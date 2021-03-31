@@ -1,8 +1,10 @@
-const Sequelize = require('sequelize');
-const sequelize = new Sequelize({
-  dialect: "sqlite",
-  storage: "library.db"
-});
+// const Sequelize = require('sequelize');
+// const sequelize = new Sequelize({
+//   dialect: "sqlite",
+//   storage: "library.db"
+// });
+
+const { sequelize } = require("./models");
 
 var createError = require('http-errors');
 var express = require('express');
